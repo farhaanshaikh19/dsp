@@ -46,15 +46,16 @@ cross-platform.
 
 **Course material for the bootcamp is compatible with Python versions 2.7 and 3.0. All HackerRank Python pre-work is configured for Python 3 only.  Therefore, Python 3 is the recommended version.**  
 
-Did you install Python 2 or 3? Why?  
+**Did you install Python 2 or 3? Why?**
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> *I installed Python 3. Since the pre-work is in Python 3, I figured I might as well, even though I started learning Python through version 2.7.*
 
 ### Q2. Which Python Version Installed   
 
-How can you check the version of Python installed if you happen to be on an unfamiliar computer?
+**How can you check the version of Python installed if you happen to be on an unfamiliar computer?**
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> *Should type this into the command line:
+~$ python --version*
 
  
 
