@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I went with EMACS because it's powerful, has a pretty decent graphical interface version also, and a built-in python interpreter.
 
 --
 
@@ -89,6 +89,6 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> EMACS, for the same user experience as the terminal. Interesting features... I still have a lot of exploring to do, but I can pull up the python interpreter withing the same console window. No need for a new window. the shortcut is C-c C-z to open up the interpreter and then C-c C-c to run the script. Being able to easily switch which part of the screen code is displayed in is also nic C-l. The kill C-k and yank C-y also looks looks useful for "cutting and pasting" . I've read that customizing the EMACS editor can be done through using the elisp language. I'm not too worried about customizability at this point, though I'm sure I will want to play around with it in the future.
 
  
