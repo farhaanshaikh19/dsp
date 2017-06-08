@@ -19,22 +19,38 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+pwd (show current working directory path)
+mkdir DIR_NAME (creating a directory)
+rm -r DIR_NAME (deleting a directory)
+touch FILE_NAME (creating a file using `touch` command)
+rm FILE_NAME (deleting a file)
+mv OLD_FILNAME NEW_FILNAME (renaming a file)
+ls -a (listing hidden files)
+cp OLD_DIR/FILE_NAME NEW_DIR/ (copying a file from one directory to another)
+cat FILE_NAME (display contents of file in terminal)
+> (redirection)
+grep string FILE_NAME (search for instance of pattern and return the result)
+sed "s/find_string/replace_with_string/g" FILE_NAME (find and replace all instances of a string within a file)
+| (piping - pipe the output of command on the left as an input for the command on the right)
+
 
 ---
 
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  
-`ls -a`  
-`ls -l`  
-`ls -lh`  
-`ls -lah`  
-`ls -t`  
-`ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+`ls`  - list the contents of a directory
+`ls -a`  - list all contents of a directory including hidden files
+`ls -l`  - list the contents of a directory in long format (including permissions, size, last modified, etc.)
+`ls -lh`  - list the contents of dir in long format with size in human readable format(KB,MB,GB)
+`ls -lah`  - list all the contents of dir (including hidden files) in long format with size in human readable format(KB,MB,GB)
+`ls -t`  - list contents of dir in order of modified time from newest to oldest
+`ls -Glp`  - list dir contents in long format, omit the Group column, mark directories with a forward slash
+
+
 
 ---
 
@@ -42,7 +58,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls -R (for a nice macro-level view: provides listing of all children directories, sub-directories, sub-sub directories, et al.)
+> > ls -S (sort by file size)
+> > ls -1 (print each file or directory on a separate line)
+> > ls -ltr (sort by last modified oldest to newest)
+> > ls -X (sort alphabetically by entry extention)
 
 ---
 
@@ -50,7 +70,11 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > xargs converts STDIN into an argument
+**Example:**
+*Say you wanted to remove from the working directory a list of files that are listed in a text file named old_files.txt*
+cat old_files.txt | rm  *(<-- this command would not work)*
+cat old_files.txt | xargs rm *(<-- this command would probably work)*
+The reason for this is because piping feeds the results on the right as a STDIN to the command on the right. rm doesn't expect STDIN, it expects arguments. xargs remedies that by converting the contents of old_files.txt from STDIN to arguments.
  
 
